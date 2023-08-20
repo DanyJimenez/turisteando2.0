@@ -7,6 +7,11 @@ public enum Mensaje {
     CORREO_INVALIDO("Revisa el formato del correo electrónico"),
     UBICACION_INVALIDA("La ubicación solo puede ser un número entre 1 y 4"),
 
+    NIT_INVALIDO("Número de NIT inválido"),
+
+    NIT_CARACTERES_INVALIDOS("El NIT solo puede tener números"),
+
+    NOMBRE_LOCAL_INVALIDO("El nombre debe ser menor a 30 caracteres"),
     FECHA_INVALIDA("El formato de la fecha es inválido"),
 
     NUMERO_PERSONAS_RESERVA("El número de personas por reserva no puede ser mayor a cuatro ni menor a uno"),

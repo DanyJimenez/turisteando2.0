@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="TuristeandoApp2.0" />
+        <module name="0_proyectofinal" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="TuristeandoApp2.0_proyectofinal" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>
