@@ -1,20 +1,20 @@
 package org.example.Entidades;
-import org.example.validaciones.LocalValidacion;
+import org.example.validaciones.EmpresaValidacion;
 
 
-public class Local {
+public abstract class Empresa {
 
     private Integer id;
     private String nit;
     private String nombre;
     private Integer ubicacion;
     private String descripcion;
-    protected LocalValidacion validacion = new LocalValidacion();
+    protected EmpresaValidacion validacion = new EmpresaValidacion();
 
-    public Local() {
+    public Empresa() {
     }
 
-    public Local(Integer id, String nit, String nombre, Integer ubicacion, String descripcion) {
+    public Empresa(Integer id, String nit, String nombre, Integer ubicacion, String descripcion) {
         this.id = id;
         this.nit = nit;
         this.nombre = nombre;
@@ -72,4 +72,6 @@ public class Local {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
+    public abstract Double cobrarMensualidad();
 }

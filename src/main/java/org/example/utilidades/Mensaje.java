@@ -23,7 +23,14 @@ public enum Mensaje {
 
     FECHA_INICIO_INVALIDA("la fecha de inicio es inválida"),
 
-    FECHA_FIN_INVALIDA("la fecha final es inválida");
+    FECHA_FIN_INVALIDA("la fecha final es inválida"),
+    VALOR_EVENTO_INVALIDO("El valor del evento no puede ser negativo"),
+
+    NUMERO_CARACTERES_MISION("El número de caracteres de la misión debe ser menor a 70 y mayor a 10 "),
+    NUMERO_CARACTERES_REPRESENTANTE_LEGAL("El representante legal debe tener al menos 10 caracteres"),
+    COBRO_INVALIDO("El cobro base de la mensualidad debe ser $200000"),
+
+    COSTO_MENSUALIDAD_INVALIDO("El valor de la mensualidad no puede ser negativo");
 
     //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
 

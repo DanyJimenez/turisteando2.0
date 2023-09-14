@@ -5,7 +5,7 @@ import org.example.validaciones.UsuarioValidacion;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Usuario {
+public abstract class Usuario {
 
     private Integer id;
     private String documento;
@@ -84,4 +84,9 @@ public class Usuario {
         }
 
     }
+    //como clase padre declaro que todos mis hijos deben:
+    //1. Registrarse en plataforma
+
+    public abstract Boolean registar();
+
 }

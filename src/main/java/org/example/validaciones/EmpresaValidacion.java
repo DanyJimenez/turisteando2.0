@@ -2,9 +2,8 @@ package org.example.validaciones;
 
 import org.example.utilidades.Mensaje;
 import org.example.utilidades.Util;
-import org.example.Entidades.Local;
 
-public class LocalValidacion {
+public class EmpresaValidacion {
 
 
     protected Util util = new Util();
