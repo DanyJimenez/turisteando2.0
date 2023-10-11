@@ -41,5 +41,13 @@ public class UsuarioValidacion {
         }
     }
 
+    public boolean validarDocumento (String documento) throws Exception {
+        if(documento.length() < 7 && documento.length() > 10){
+            throw new Exception(Mensaje.NUMERO_CARACTERES_INVALIDO.getMensaje());
+        }else {
+            return true;
+        }
+    }
+
 
 }

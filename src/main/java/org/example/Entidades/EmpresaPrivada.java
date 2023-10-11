@@ -11,12 +11,12 @@ public class EmpresaPrivada extends Empresa implements IReporte {
 
     }
 
-    @Override
+    /*@Override
     public Double cobrarMensualidad() {
        Integer base = 200000;
        Double cobro = base + (base * 0.19);
        return  cobro;
-    }
+    }*/
 
 
     public EmpresaPrivada(Integer id, String nit, String nombre, Integer ubicacion, String descripcion, String representanteLegal) {

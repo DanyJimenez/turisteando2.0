@@ -2,7 +2,7 @@ package org.example.Entidades;
 import org.example.validaciones.EmpresaValidacion;
 
 
-public abstract class Empresa {
+public class Empresa {
 
     private Integer id;
     private String nit;
@@ -73,5 +73,5 @@ public abstract class Empresa {
         this.descripcion = descripcion;
     }
 
-    public abstract Double cobrarMensualidad();
+    //public abstract Double cobrarMensualidad();
 }

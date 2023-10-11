@@ -13,7 +13,7 @@ public class Reserva {
 
     private Integer id;
     private Usuario usuario;
-    private Oferta oferta;
+    //private Oferta oferta;
     private Double costoTotal;
     private LocalDate fecha;
     private Integer numeropersonasReserva;
@@ -25,10 +25,10 @@ public class Reserva {
     }
 
 
-    public Reserva(Integer id, Usuario usuario, Oferta oferta, Double costoTotal, LocalDate fecha, Integer numeropersonasReserva) {
+    public Reserva(Integer id, Usuario usuario, Double costoTotal, LocalDate fecha, Integer numeropersonasReserva) {
         this.id = id;
         this.usuario = usuario;
-        this.oferta = oferta;
+        //this.oferta = oferta;
         this.costoTotal = costoTotal;
         this.fecha = fecha;
         this.numeropersonasReserva = numeropersonasReserva;
@@ -50,14 +50,7 @@ public class Reserva {
         this.usuario = usuario;
     }
 
-    public Oferta getOferta() {
-        return oferta;
-    }
 
-    public void setOferta(Oferta oferta) {
-
-        this.oferta = oferta;
-    }
 
     public Double getCostoTotal() {
         return costoTotal;

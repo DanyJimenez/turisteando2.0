@@ -5,7 +5,7 @@ import org.example.validaciones.UsuarioValidacion;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public abstract class Usuario {
+public  class Usuario {
 
     private Integer id;
     private String documento;
@@ -35,11 +35,18 @@ public abstract class Usuario {
     }
 
     public String getDocumento() {
+
         return documento;
     }
 
     public void setDocumento(String documento) {
-        this.documento = documento;
+        try{
+            this.validacion.validarDocumento(documento);
+            this.documento = documento;
+        } catch (Exception error){
+            System.out.println(error.getMessage());
+        }
+        //
     }
 
     public String getNombres() {
@@ -87,6 +94,6 @@ public abstract class Usuario {
     //como clase padre declaro que todos mis hijos deben:
     //1. Registrarse en plataforma
 
-    public abstract Boolean registar();
+    // public abstract Boolean registar();
 
 }

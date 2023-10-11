@@ -8,10 +8,10 @@ public class Ocasional extends Usuario implements IReporte {
     public Ocasional(){
 
     }
-    @Override
+    /*@Override
     public Boolean registar() {
         return null;
-    }
+    }*/
 
     public Ocasional(Integer id, String documento, String nombres, String correo, Integer ubicacion, Integer valorEvento) {
         super(id, documento, nombres, correo, ubicacion);

@@ -12,12 +12,12 @@ public class EntidadCultural extends Empresa implements IReporte {
     public EntidadCultural(){
 
     }
-    @Override
+    /*@Override
     public Double cobrarMensualidad() {
         Integer base = 200000;
         Double cobro = base + (base * 0.19)-(base * 0.10);
         return  cobro;
-    }
+    }*/
 
 
     public EntidadCultural(Integer id, String nit, String nombre, Integer ubicacion, String descripcion, String secretaria, String mision) {
