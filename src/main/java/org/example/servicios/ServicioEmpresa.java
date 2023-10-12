@@ -43,7 +43,7 @@ public class ServicioEmpresa {
             //Confirmar que la BD responde (confirmar la transacción)
             manejadorConexionEntidades.getTransaction().commit();
 
-            System.out.println("Éxito. Registrando empresa...");
+            System.out.println("Registro exitoso...");
 
 
         }catch(Exception error){

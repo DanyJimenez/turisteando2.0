@@ -41,6 +41,11 @@ public class Turismo {
 
             System.out.print("Digite su ubicación: ");
             Integer ubicacion = lea.nextInt();
+            lea.nextLine();
+
+
+            System.out.println("Gracias por registrarse.");
+
 
             ControladorUsuario controladorUsuario = new ControladorUsuario();
             controladorUsuario.registrarUsuario(documento,nombre, correo,ubicacion);
@@ -60,11 +65,14 @@ public class Turismo {
             System.out.print("Digite la descripción: ");
             String descripcion = lea.nextLine();
 
+            System.out.println("Gracias por registrarse.");
+
+
             ControladorEmpresa controladorEmpresa = new ControladorEmpresa();
             controladorEmpresa.registrarEmpresa(nit,nombre,ubicacion,descripcion);
 
         } else if(opcion == 0){
-            System.out.println("Hasta luego.");
+            System.out.println("¡Hasta pronto!.");
 
         } else {
             System.out.println("La opción " + opcion + " no es válida.");

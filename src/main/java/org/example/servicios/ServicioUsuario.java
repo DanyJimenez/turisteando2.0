@@ -42,7 +42,7 @@ public class ServicioUsuario {
             //Confirmar que la BD responde (confirmar la transacción)
             manejadorConexionEntidades.getTransaction().commit();
 
-            System.out.println("Éxito. Registrando usuario...");
+            System.out.println("Registro exitoso...");
 
 
         }catch(Exception error){
